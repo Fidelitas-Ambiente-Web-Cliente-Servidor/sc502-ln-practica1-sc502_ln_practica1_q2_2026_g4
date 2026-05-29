@@ -1,0 +1,78 @@
+/* PALETA DE COLORES
+Azul oscuro: #1e3a8a
+Azul claro: #3b82f6 
+Gris claro: #f1f5f9 
+Blanco: #ffffff */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+}
+
+
+nav{
+
+    background-color: #1e3a8a;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.logo img{
+
+    width: 100px;
+
+    height: 100px;
+
+}
+
+.logo h2{
+
+    color: white;
+    font-size: 25px;
+
+}
+
+
+.menu a{
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+}
+
+.activo{
+    font-weight: bold;
+}
+
+
+footer{
+
+    background-color: #1e3a8a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
