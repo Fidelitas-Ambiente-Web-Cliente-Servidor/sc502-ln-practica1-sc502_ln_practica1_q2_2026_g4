@@ -98,6 +98,29 @@
     margin-bottom: 10px;
 }
 
+.filtros-categoria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-categoria {
+    padding: 8px 20px;
+    border: 2px solid #1e3a8a;
+    border-radius: 20px;
+    background: white;
+    color: #1e3a8a;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-categoria.activo {
+    background: #1e3a8a;
+    color: white;
+}
+
 @media(max-width:768px){
 
     .busqueda input {
@@ -112,3 +135,4 @@
         align-items: center;
     }
 }
+
