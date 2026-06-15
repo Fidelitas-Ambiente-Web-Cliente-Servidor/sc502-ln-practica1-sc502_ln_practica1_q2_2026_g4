@@ -19,7 +19,7 @@
 
         <div class="logo">
 
-            <img src="images/logoo.png">
+            <img src="images/logoo.png" alt="Logo">
 
             <h2>LearnWeb Academy</h2>
 
@@ -40,7 +40,8 @@
 
         <h1>Equipo de Profesores</h1>
 
-        <p>Conoce a nuestros especialistas en tecnología,
+        <p>
+            Conoce a nuestros especialistas en tecnología,
             diseño y marketing digital.
         </p>
 
@@ -50,61 +51,6 @@
 
         <div class="contenedor-profesores">
 
-            <div class="profesor">
-
-                <img src="images/profesor1.jpg" alt="Profesor">
-
-                <h3>Ana Rodríguez</h3>
-
-                <h4>Desarrollo Web</h4>
-
-                <p>Especialista en HTML, CSS y JavaScript
-                    con más de 10 años de experiencia.
-                </p>
-
-            </div>
-
-            <div class="profesor">
-
-                <img src="images/profesor2.jpg" alt="Profesor">
-
-                <h3>Carlos Méndez</h3>
-
-                <h4>Diseño UX/UI</h4>
-
-                <p>Experto en diseño de interfaces y
-                    experiencia de usuario.
-                </p>
-
-            </div>
-
-            <div class="profesor">
-
-                <img src="images/profesor3.jpg" alt="Profesor">
-
-                <h3>Laura Sánchez</h3>
-
-                <h4>Marketing Digital</h4>
-
-                <p>Especialista en redes sociales y
-                    estrategias de posicionamiento.
-                </p>
-
-            </div>
-
-            <div class="profesor">
-
-                <img src="images/profesor4.jpg" alt="Profesor">
-
-                <h3>David Vargas</h3>
-
-                <h4>Programación Java</h4>
-
-                <p>Desarrollador de software con amplia
-                    experiencia en aplicaciones empresariales.
-                </p>
-
-            </div>
 
         </div>
 
@@ -116,7 +62,8 @@
 
             <h2>Misión</h2>
 
-            <p>Brindar educación tecnológica de calidad,
+            <p>
+                Brindar educación tecnológica de calidad,
                 desarrollando profesionales preparados para
                 los retos del mundo digital.
             </p>
@@ -127,7 +74,8 @@
 
             <h2>Visión</h2>
 
-            <p> Ser una academia líder en formación tecnológica,
+            <p>
+                Ser una academia líder en formación tecnológica,
                 reconocida por la excelencia de sus programas y docentes.
             </p>
 
@@ -141,6 +89,38 @@
         <p>Instagram | Facebook | YouTube</p>
 
     </footer>
+
+    <!-- Modal -->
+
+    <div id="modalProfesor" class="modal">
+
+        <div class="modal-contenido">
+
+            <span class="cerrar">&times;</span>
+
+            <img id="modalFoto" src="" alt="Profesor">
+
+            <h2 id="modalNombre"></h2>
+
+            <h4 id="modalEspecialidad"></h4>
+
+            <p id="modalDescripcion"></p>
+
+            <p>
+                <strong>Correo:</strong>
+                <span id="modalCorreo"></span>
+            </p>
+
+            <p>
+                <strong>Cursos:</strong>
+                <span id="modalCursos"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="profesores.js"></script>
 
 </body>
 
