@@ -149,3 +149,19 @@
         height: 300px;
     }
 }
+.error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#mensajeExito {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#btnEnviar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

@@ -54,26 +54,33 @@
 
             <h2>Envíanos un mensaje</h2>
 
-            <form>
+            <form id="formularioContacto">
 
                 <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre">
+                <span id="errorNombre" class="error"></span>
 
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" required>
+                <input type="email" id="correo" name="correo">
+                <span id="errorCorreo" class="error"></span>
 
                 <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                <input type="tel" id="telefono" name="telefono">
+                <span id="errorTelefono" class="error"></span>
 
                 <label for="asunto">Asunto</label>
-                <input type="text" id="asunto" name="asunto" required>
+                <input type="text" id="asunto" name="asunto">
+                <span id="errorAsunto" class="error"></span>
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+                <span id="errorMensaje" class="error"></span>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" id="btnEnviar" disabled>Enviar</button>
 
             </form>
+
+            <div id="mensajeExito"></div>
 
         </div>
 
@@ -109,6 +116,8 @@
         <p>Instagram | Facebook | YouTube</p>
 
     </footer>
+
+    <script src="contacto.js"></script>
 
 </body>
 
