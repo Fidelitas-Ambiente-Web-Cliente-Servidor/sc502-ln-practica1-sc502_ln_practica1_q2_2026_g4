@@ -131,6 +131,9 @@ mensaje.addEventListener("input", revisarFormulario);
 
 // Evento de envío del formulario
 
+/*
+Código utilizado en la Tarea 2 para simular el envío del formulario.
+
 formulario.addEventListener("submit", function (evento) {
 
     evento.preventDefault();
@@ -144,4 +147,24 @@ formulario.addEventListener("submit", function (evento) {
     formulario.reset();
 
     btnEnviar.disabled = true;
+});
+*/
+
+
+// Validación antes de enviar los datos al controlador PHP
+
+formulario.addEventListener("submit", function (evento) {
+
+    const formularioValido = [
+        validarNombre(),
+        validarCorreo(),
+        validarTelefono(),
+        validarAsunto(),
+        validarMensaje()
+    ].every(Boolean);
+
+    if (!formularioValido) {
+        evento.preventDefault();
+        btnEnviar.disabled = true;
+    }
 });
