@@ -114,3 +114,43 @@ VALUES
     'Certificaciones',
     'Quisiera saber si los cursos incluyen una certificación al finalizar.'
 );
+
+CREATE TABLE IF NOT EXISTS profesores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    especialidad VARCHAR(100) NOT NULL,
+    bio TEXT NOT NULL,
+    foto VARCHAR(255),
+    activo TINYINT(1) DEFAULT 1
+);
+INSERT INTO profesores(nombre, especialidad, bio, foto, activo)
+VALUES
+('Ana Rodríguez',
+'Desarrollo Web',
+'Especialista en HTML, CSS y JavaScript con más de 10 años de experiencia.',
+'images/profesor1.jpg',
+1),
+
+('Carlos Méndez',
+'Diseño UX/UI',
+'Experto en diseño de interfaces y experiencia de usuario.',
+'images/profesor2.jpg',
+1),
+
+('Laura Sánchez',
+'Marketing Digital',
+'Especialista en redes sociales y SEO.',
+'images/profesor3.jpg',
+1),
+
+('David Vargas',
+'Programación Java',
+'Desarrollador de software empresarial.',
+'images/profesor4.jpg',
+1),
+
+('María Solís',
+'Bases de Datos',
+'Especialista en MySQL y PostgreSQL.',
+'images/profesor5.jpg',
+1);

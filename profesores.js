@@ -1,3 +1,4 @@
+/*
 let profesores = [
     {
         nombre: "Ana Rodriguez",
@@ -123,3 +124,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+*/
