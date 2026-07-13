@@ -101,12 +101,28 @@
 .filtros-categoria {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
-.btn-categoria {
+.etiqueta-filtro {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.filtros-categoria select {
+    padding: 8px 15px;
+    border: 2px solid #1e3a8a;
+    border-radius: 20px;
+    color: #1e3a8a;
+    font-weight: bold;
+    background: white;
+}
+
+.btn-categoria,
+.btn-filtrar {
     padding: 8px 20px;
     border: 2px solid #1e3a8a;
     border-radius: 20px;
@@ -117,6 +133,11 @@
 }
 
 .btn-categoria.activo {
+    background: #1e3a8a;
+    color: white;
+}
+
+.btn-filtrar:hover {
     background: #1e3a8a;
     color: white;
 }
