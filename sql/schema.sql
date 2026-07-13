@@ -154,3 +154,46 @@ VALUES
 'Especialista en MySQL y PostgreSQL.',
 'images/profesor5.jpg',
 1);
+
+CREATE TABLE IF NOT EXISTS cursos_destacados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion VARCHAR(255) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    categoria VARCHAR(50) NOT NULL,
+    disponible BOOLEAN NOT NULL
+);
+
+
+INSERT INTO cursos_destacados 
+(nombre, descripcion, precio, categoria, disponible)
+VALUES
+('Desarrollo Web',
+ 'Aprende HTML y CSS desde cero',
+ 120.00,
+ 'Programacion',
+ TRUE),
+
+('Diseño UX/UI',
+ 'Diseña interfaces modernas y atractivas',
+ 150.00,
+ 'Diseño',
+ TRUE),
+
+('Marketing Digital',
+ 'Aprende estrategias digitales para negocios',
+ 100.00,
+ 'Marketing',
+ TRUE),
+
+('JavaScript Avanzado',
+ 'Domina JavaScript moderno ES6',
+ 180.00,
+ 'Programacion',
+ TRUE),
+
+('Bases de Datos MySQL',
+ 'Aprende modelado y consultas SQL',
+ 130.00,
+ 'Base de Datos',
+ FALSE);

@@ -5,7 +5,7 @@ require_once __DIR__ . '/../config/database.php';
 class ProfesorModel
 {
 
-    private PDO $db;
+    private PDO $connection;
 
     public function __construct()
     {

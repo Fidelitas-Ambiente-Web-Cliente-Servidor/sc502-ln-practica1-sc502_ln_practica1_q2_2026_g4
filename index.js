@@ -1,3 +1,4 @@
+/*
 let cursos = [
     {
         nombre: "Desarrollo Web",
@@ -65,3 +66,4 @@ document.addEventListener("DOMContentLoaded", function() {
     mostrarCursos();
 
 });
+*/
